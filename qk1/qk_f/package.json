@@ -1,0 +1,36 @@
+{
+  "name": "qk_f",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npm-run-all --parallel serve:*",
+    "serve:main": "vue-cli-service serve",
+    "serve:subApp1": "cd subapp/qk_s1 && npm run serve",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "vue-cli-service build",
+    "build:subApp1": "cd subapp/qk_s1 && npm run build"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
+    "@vue/cli-plugin-vuex": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "qiankun": "^2.7.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
